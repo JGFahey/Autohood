@@ -4,15 +4,15 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>57822ac0-c147-41c2-ab4a-a1a20793bc2f</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>
-    </StartupFile>
+    <StartupFile>main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>RobinhoodScripts</Name>
     <RootNamespace>RobinhoodScripts</RootNamespace>
-    <InterpreterId>Global|PythonCore|3.8</InterpreterId>
+    <InterpreterId>Global|PythonCore|3.7</InterpreterId>
+    <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,15 +23,31 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="login.py">
+    <Compile Include="autohood\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="autohood\__main__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="autohood\login.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="main.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="setup.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <InterpreterReference Include="Global|PythonCore|3.8" />
+    <Content Include="install.bat" />
+    <Content Include="README.md" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="README.md" />
+    <InterpreterReference Include="Global|PythonCore|3.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="autohood\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
