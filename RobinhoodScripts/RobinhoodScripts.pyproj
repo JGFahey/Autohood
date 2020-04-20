@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>57822ac0-c147-41c2-ab4a-a1a20793bc2f</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>main.py</StartupFile>
+    <StartupFile>.\autohood\__main__.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -13,6 +13,10 @@
     <RootNamespace>RobinhoodScripts</RootNamespace>
     <InterpreterId>Global|PythonCore|3.7</InterpreterId>
     <IsWindowsApplication>False</IsWindowsApplication>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments>
+    </CommandLineArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,9 +34,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="autohood\login.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="main.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="setup.py">
